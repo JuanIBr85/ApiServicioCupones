@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiServicioCupones")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c55205fbc8606d1b3c89e7dfd82a5f06c35a5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e34b5455cd8ed9d9950857b2d468c974a0b12cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiServicioCupones")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiServicioCupones")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
