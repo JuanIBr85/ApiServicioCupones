@@ -103,11 +103,14 @@ namespace ApiServicioCupones.Controllers
 
         private string FormatCodCliente(string codCliente)
         {
-            if (long.TryParse(codCliente, out long numero))
+            string sinPuntos = codCliente.Replace(".", "");
+
+            if (long.TryParse(sinPuntos, out long numero))
             {
-                return string.Format("{0:#,0}", numero).Replace(',', '.');
+                return numero.ToString();
             }
-            return codCliente;
+            throw new ArgumentException("El DNI debe contener solo números y puntos.");
         }
+
     }
 }
