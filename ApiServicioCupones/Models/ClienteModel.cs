@@ -6,6 +6,8 @@ namespace ClientesApi.Models
 {
     public class ClienteModel
     {
+        
+       [Key]
         public int CodCliente { get; set; }
 
         [Required(ErrorMessage = "El nombre del cliente es obligatorio.")]
