@@ -29,7 +29,7 @@ namespace ApiServicioCupones.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClienteModel>> GetClienteModel(int id)
+        public async Task<ActionResult<ClienteModel>> GetClienteModel(string id)
         {
             var clienteModel = await _context.Clientes.FindAsync(id);
 
@@ -42,9 +42,9 @@ namespace ApiServicioCupones.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutClienteModel(int id, ClienteModel clienteModel)
+        public async Task<IActionResult> PutClienteModel(string id, ClienteModel clienteModel)
         {
-            if (id != clienteModel.CodCliente) 
+            if (id != clienteModel.CodCliente.ToString())
             {
                 return BadRequest();
             }
@@ -70,10 +70,11 @@ namespace ApiServicioCupones.Controllers
             return NoContent();
         }
 
-      
         [HttpPost]
         public async Task<ActionResult<ClienteModel>> PostClienteModel(ClienteModel clienteModel)
         {
+            clienteModel.CodCliente = FormatCodCliente(clienteModel.CodCliente);
+
             _context.Clientes.Add(clienteModel);
             await _context.SaveChangesAsync();
 
@@ -81,7 +82,7 @@ namespace ApiServicioCupones.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteClienteModel(int id)
+        public async Task<IActionResult> DeleteClienteModel(string id)
         {
             var clienteModel = await _context.Clientes.FindAsync(id);
             if (clienteModel == null)
@@ -95,9 +96,18 @@ namespace ApiServicioCupones.Controllers
             return NoContent();
         }
 
-        private bool ClienteModelExists(int id)
+        private bool ClienteModelExists(string id)
         {
-            return _context.Clientes.Any(e => e.CodCliente == id); 
+            return _context.Clientes.Any(e => e.CodCliente.ToString() == id); 
+        }
+
+        private string FormatCodCliente(string codCliente)
+        {
+            if (long.TryParse(codCliente, out long numero))
+            {
+                return string.Format("{0:#,0}", numero).Replace(',', '.');
+            }
+            return codCliente;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace ClientesApi.Models
     {
         
        [Key]
-        public int CodCliente { get; set; }
+        public string CodCliente { get; set; }
 
         [Required(ErrorMessage = "El nombre del cliente es obligatorio.")]
         [StringLength(100, ErrorMessage = "El nombre no puede exceder los 100 caracteres.")]
