@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john_\\source\\repos\\JuanIBr85\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\ApiServicioCupones-master\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john_\\source\\repos\\JuanIBr85\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj": {
+    "C:\\Users\\HP\\source\\repos\\ApiServicioCupones-master\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john_\\source\\repos\\JuanIBr85\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ApiServicioCupones-master\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj",
         "projectName": "ApiServicioCupones",
-        "projectPath": "C:\\Users\\john_\\source\\repos\\JuanIBr85\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj",
-        "packagesPath": "C:\\Users\\john_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john_\\source\\repos\\JuanIBr85\\ApiServicioCupones\\ApiServicioCupones\\obj\\",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ApiServicioCupones-master\\ApiServicioCupones\\ApiServicioCupones\\ApiServicioCupones.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ApiServicioCupones-master\\ApiServicioCupones\\ApiServicioCupones\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\john_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
